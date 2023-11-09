@@ -45,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-tanh
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterTanh from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-tanh@deno/mod.js';
+var iterTanh = require( '@stdlib/math-iter-special-tanh' );
 ```
 
 #### iterTanh( iterator )
@@ -60,7 +76,7 @@ import iterTanh from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-ta
 Returns an [iterator][mdn-iterator-protocol] which iteratively evaluates the [hyperbolic tangent][@stdlib/math/base/special/tanh].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterTanh( array2iterator( [ 0.0, 2.0 ] ) );
 // returns <Object>
@@ -105,8 +121,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import iterTanh from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-tanh@deno/mod.js';
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterTanh = require( '@stdlib/math-iter-special-tanh' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( -4.0, 4.0, {
@@ -148,7 +164,7 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math-base/special/tanh`][@stdlib/math/base/special/tanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic tangent of a number.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/tanh`][@stdlib/math/base/special/tanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic tangent of a double-precision floating-point number.</span>
 -   <span class="package-name">[`@stdlib/math-iter/special/cosh`][@stdlib/math/iter/special/cosh]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the hyperbolic cosine for each iterated value.</span>
 -   <span class="package-name">[`@stdlib/math-iter/special/sinh`][@stdlib/math/iter/special/sinh]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the hyperbolic sine for each iterated value.</span>
 -   <span class="package-name">[`@stdlib/math-iter/special/tan`][@stdlib/math/iter/special/tan]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the tangent for each iterated value.</span>
@@ -166,7 +182,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -230,13 +246,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/tanh]: https://github.com/stdlib-js/math-base-special-tanh/tree/deno
+[@stdlib/math/base/special/tanh]: https://github.com/stdlib-js/math-base-special-tanh
 
-[@stdlib/math/iter/special/cosh]: https://github.com/stdlib-js/math-iter-special-cosh/tree/deno
+[@stdlib/math/iter/special/cosh]: https://github.com/stdlib-js/math-iter-special-cosh
 
-[@stdlib/math/iter/special/sinh]: https://github.com/stdlib-js/math-iter-special-sinh/tree/deno
+[@stdlib/math/iter/special/sinh]: https://github.com/stdlib-js/math-iter-special-sinh
 
-[@stdlib/math/iter/special/tan]: https://github.com/stdlib-js/math-iter-special-tan/tree/deno
+[@stdlib/math/iter/special/tan]: https://github.com/stdlib-js/math-iter-special-tan
 
 <!-- </related-links> -->
 
