@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterTanh from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-tanh@esm/index.mjs';
+import iterTanh from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-tanh@v0.2.1-esm/index.mjs';
 ```
 
 #### iterTanh( iterator )
@@ -111,7 +111,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <script type="module">
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import iterTanh from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-tanh@esm/index.mjs';
+import iterTanh from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-tanh@v0.2.1-esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( -4.0, 4.0, {
